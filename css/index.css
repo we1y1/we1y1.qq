@@ -1,0 +1,335 @@
+/* main 主体区域 */
+.main {
+    margin-top: 10px;
+    margin-left: 219px;
+    width: 980px;
+    height: 455px;
+}
+.main .focus{
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+.main .focus img {
+    width: 100%;
+}
+.main .focus:hover .arrow-left{
+    display: block;
+}
+.main .focus:hover .arrow-right{
+    display: block;
+}
+.main .arrow-left,
+.main .arrow-right {
+    /* display: block; */
+    display: none;
+    position: absolute;
+    top: 208px;
+    width: 24px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+.main .arrow-left {
+    left: 0;
+}
+.main .arrow-right {
+    right: 0;
+}
+.main .arrow-left:hover,
+.main .arrow-right:hover {
+    color: #e33333;
+}
+.main .rank {
+    position: absolute;
+    bottom: 10px;
+    left: 53px;
+    width: 138px;
+    height: 12px;
+}
+.main .rank a {
+    float: left;
+    margin-right: 6px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.main .rank a:last-of-type {
+    margin-right: 0;
+}
+.main .rank a:hover {
+    background-color: #fff;
+}
+.main .newsflash {
+    float: right;
+    width: 250px;
+    /* height: 455px; */
+    /* background-color: purple; */
+}
+.main .newsflash .news{  
+    height: 165px;
+    border: 1px solid #ccc;
+}
+.newsflash .news .title {
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    border-bottom: 1px dotted #ccc;
+}
+.newsflash .news .title .fl {
+    padding-left: 15px;
+}
+.newsflash .news .title .fr {
+    padding-right: 15px;
+    font-size: 12px;
+}
+.news .title .fr::after {
+    content: "\e607";
+    font-family: "iconfont" !important;
+    margin-left: 7px;
+    font-size: 10px;
+}
+.news .content {
+    height: 130px;
+}
+.news .content ul {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.news .content ul li {
+    height: 23px;
+    line-height: 23px;
+}
+.newsflash .lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+.lifeservice ul {
+    width: 252px;
+}
+.main .lifeservice ul li {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    /* margin-left: -1px; */
+    width: 63px;
+    height: 71px;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    /* border-top: 0; */
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* border-collapse 只能用于表格 */
+    /* border-collapse: collapse; */
+}
+/* .lifeservice ul li:first-of-type {
+    margin-left: 0;
+} */
+/* .main .lifeservice ul li:nth-of-type(4n) {
+    width: 61px;
+    border-right: 0;
+}
+.main .sprit ul li:nth-of-type(n+9) {
+    height: 67px;
+    border-bottom: 0;
+} */
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -80px -15px;
+}
+.lifeservice ul li:first-of-type i{
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+.lifeservice ul li p {
+    margin-bottom: 10px;
+}
+.lifeservice ul li .down {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(10, 175, 19);
+    color: #fff;
+    font-size: 8px;
+}
+.lifeservice ul li .sanjiao1,
+.lifeservice ul li .sanjiao2 {
+    position: absolute;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border: 0;
+    border-top: 3px solid green;
+    
+}
+.lifeservice ul li .sanjiao1 {
+    right: 9px;
+    border-right: 3px solid transparent;
+}
+.lifeservice ul li .sanjiao2 {
+    right: 0;
+    border-left: 3px solid transparent;
+}
+.main .bargain{
+    margin-top: 5px;
+    width: 100%;
+}
+.bargain img {
+    width: 100%;
+}
+.recom {
+    margin-top: 10px;
+    height: 163px;
+}
+.recom .recom-hd {
+    float: left;  
+    width: 200px;
+    height: 163px;
+    /* line-height: 163px; */
+    text-align: center;
+    background-color: #5c5251;
+    color: #fff;
+}
+.recom-hd img {
+    padding-top: 30px;
+}
+.recom-hd h3 {
+    height: 27px;
+    line-height: 27px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.recom .recom-bd {
+    float: left;
+    width: 1000px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+.recom-bd ul {
+    margin-top: 10px;;
+    height: 143px;
+}
+.recom-bd ul li {
+    float: left;
+    width: 250px;
+    height: 143px;
+    border-right: 1px solid #ccc;
+}
+.recom-bd ul li:last-of-type {
+    border-right: 0;
+}
+.recom-bd ul li img {
+    width: 248px;
+    height: 143px;
+}
+/* 楼层区域 */
+.floor .jiadian .box_hd {
+    margin-top: 30px;
+    height: 32px;
+    border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+    float: left;
+    color: #c81623;
+    font-size: 18px;
+    /* font-weight: 400; */
+}
+.tab_list {
+    float: right;
+    padding-right: 15px;
+}
+/* .tab_list ul{
+    height: 30px;
+} */
+.tab_list ul li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.tab_list ul li:nth-of-type(2n) {
+    width: 1px;
+    height: 13px;
+    margin: 8.5px 15px;
+    background-color: #666;
+}
+.tab_list_item {
+    height: 360px;
+}
+.tab_list_item .col_209 {
+    float: left;
+    width: 209px;
+    height: 360px;
+    background-color: #f9f9f9;
+}
+.tab_list_item .col_209 .info {
+    height: 99px;
+}
+.tab_list_item .col_209 .info ul li {
+    float: left;
+    margin-left: 10px;
+    width: 86px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.tab_list_item .col_209 img {
+    margin-top: 15px;
+}
+/* .box_bd img:hover { */
+.tab_list_item .col_329 {
+    float: left;
+    width: 329px;
+    height: 360px;
+}
+.tab_list_item .col_329 img {
+    width: 329px;
+    height: 360px;
+}
+.tab_list_item .col_219 {
+    float: left;
+    width: 220px;
+    height: 360px;
+    border-right: 1px solid #ccc;
+}
+.tab_lsit_item .col_219 .h_181 {
+    width: 219px;
+    height: 181px;
+    /* border-right: 1px solid #ccc; */
+    /* border-bottom: 1px solid #ccc; */
+}
+.col_220 .h_181 img {
+    width: 219px;
+    height: 180px;
+}
+.tab_list_item .col_219 .h_179 {
+    width: 219px;
+    height: 179px;
+    /* border-right: 1px solid #ccc; */
+    /* border-bottom: 1px solid #ccc; */
+}
+.col_220 .h_179 img {
+    width: 219px;
+    height: 178px;
+}
+.tab_list_item .col_219 .tab-con-item {
+    border-bottom: 1px solid #ccc;
+}
+.tab_list_item .col_221 {
+    float: left;
+    width: 221px;
+    height: 360px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
